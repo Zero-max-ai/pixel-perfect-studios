@@ -40,7 +40,7 @@ const App = () => {
       </div>
 
       <div className="lg:flex gap-10 py-10">
-        <div className="w-5/12 text-xl font-bold pb-5">What\'s Included</div>
+        <div className="w-5/12 text-xl font-bold pb-5">What&apos;s Included</div>
         <div className="flex flex-col gap-3">
           {whatsIncluded.map(({ title, content }) => {
             return (
@@ -61,7 +61,7 @@ const App = () => {
             <span className="text-green-500">built</span>
           </h1>
           <span className="text-gray-600">
-            A look at some of the amazing webapps that we\'ve built recently.
+            A look at some of the amazing webapps that we&apos;ve built recently.
           </span>
         </div>
         <div className="flex flex-col gap-8">
