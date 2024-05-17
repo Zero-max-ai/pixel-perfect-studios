@@ -6,14 +6,13 @@ import ShowNavIcons from "./ShowNavIcons";
 
 const HamburgerIcon = () => {
   const [isOpen, setIsOpen] = useState(false);
-  useEffect(() => {
-    document.body.style.overflow = isOpen ? "hidden" : "auto";
-  }, []);
-
   return (
     <div className="hidden max-md:block">
       <div
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => {
+          setIsOpen(!isOpen);
+          document.body.style.overflow = isOpen ? "hidden" : "auto";
+        }}
         className="max-md:flex cursor-pointer w-fit p-2 flex-col gap-1"
       >
         <span

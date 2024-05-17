@@ -44,7 +44,7 @@ const PriceCard = ({
       >
         {features.map((val: string) => {
           return (
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4" key={val}>
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

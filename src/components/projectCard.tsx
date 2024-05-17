@@ -1,4 +1,4 @@
-import ClientButton from "./ClientButton";
+import Image from "next/image";
 
 interface ProjectCardProps {
   title: string;
@@ -20,8 +20,8 @@ const ProjectCard = ({ title, content, img1, img2 }: ProjectCardProps) => {
         </div>
       </div>
       <div className="flex max-lg:flex-col gap-5 w-7/12 max-lg:w-full mx-auto">
-        <img src={img1} alt="" className="w-1/2 max-lg:w-full rounded-xl" />
-        <img src={img2} alt="" className="w-1/2 max-lg:w-full rounded-xl" />
+        <Image src={img1} alt="" className="w-1/2 max-lg:w-full rounded-xl" />
+        <Image src={img2} alt="" className="w-1/2 max-lg:w-full rounded-xl" />
       </div>
     </div>
   );

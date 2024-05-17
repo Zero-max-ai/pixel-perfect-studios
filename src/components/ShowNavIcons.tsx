@@ -8,6 +8,7 @@ const ShowNavIcons = () => {
       {navbarLinks.map(({ title, renderLoc }) => {
         return (
           <Link
+            key={title}
             href={renderLoc}
             className=" w-full hover:bg-slate-200 rounded-md py-2"
           >

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface ImgCardProps {
   title: string;
   content: string;
@@ -12,7 +14,7 @@ const ImgCard = ({ title, content, imgSrc }: ImgCardProps) => {
         <span className="text-gray-600 font-extrathin text-sm">{content}</span>
       </div>
       <div className="border-t border-l border-spacing-3 border-gray-300 px-3 py-3">
-        <img src={imgSrc} alt="" className="w" />
+        <Image src={imgSrc} alt="" className="w" />
       </div>
     </div>
   );
